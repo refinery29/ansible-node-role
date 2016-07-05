@@ -18,6 +18,7 @@
     update_cache=yes
   with_items:
   - nodejs
+  - g++
 
 - name: Link nodejs to node
   file:
