@@ -9,7 +9,7 @@
 - name: Install node
   apt:
     pkg={{ item }}
-    state=installed
+    state=latest
     install_recommends=no
     cache_valid_time=1800
     update_cache=yes
