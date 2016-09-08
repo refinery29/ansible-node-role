@@ -1,9 +1,6 @@
 ---
 - name: Add node package key.
-  apt_key:
-    url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-    id=68576280
-    state=present
+  apt_key: data="{{ node_key }}"
 
 - name: Add node repo.
   apt_repository: >
