@@ -14,11 +14,5 @@
     cache_valid_time=1800
     update_cache=yes
   with_items:
-  - nodejs
+  - "{{ nodejs_version }}"
   - g++
-
-- name: Link nodejs to node
-  file:
-    src=/usr/bin/nodejs
-    dest=/usr/bin/node
-    state=link
