@@ -13,7 +13,6 @@
     install_recommends=no
     cache_valid_time=1800
     update_cache=yes
-    allow_unauthenticated=yes
     force=yes
   with_items:
   - "{{ nodejs_version }}"
