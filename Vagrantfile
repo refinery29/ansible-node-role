@@ -15,7 +15,6 @@ Vagrant.configure(2) do |config|
                     raw_arguments: %w(-vv --diff),
                     playbook: 'test-playbook.yml',
                     groups: { role_name => machine_names },
-                    host_vars: { "bento-fedora-26" => {"ansible_python_interpreter" => "/usr/bin/python3"}},
                     limit: :all
             end
         end
